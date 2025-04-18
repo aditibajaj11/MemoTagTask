@@ -4,7 +4,7 @@ import {
   motion,
   useInView,
   useMotionValue,
-  useSpring,
+  //useSpring,
   animate,
 } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,7 +14,7 @@ function AnimatedCounter({ from = 0, to = 1000, duration = 1.5 }) {
   const isInView = useInView(ref, { once: true });
 
   const motionValue = useMotionValue(from);
-  const spring = useSpring(motionValue, { duration, stiffness: 100 });
+  //const spring = useSpring(motionValue, { duration, stiffness: 100 });
   const [current, setCurrent] = useState(from);
 
   useEffect(() => {
