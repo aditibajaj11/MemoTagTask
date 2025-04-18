@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useInView,
-  useMotionValue,
+  //useMotionValue,
   //useSpring,
   animate,
 } from "framer-motion";
@@ -13,7 +13,7 @@ function AnimatedCounter({ from = 0, to = 1000, duration = 1.5 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const motionValue = useMotionValue(from);
+  //const motionValue = useMotionValue(from);
   //const spring = useSpring(motionValue, { duration, stiffness: 100 });
   const [current, setCurrent] = useState(from);
 
