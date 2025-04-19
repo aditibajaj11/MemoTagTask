@@ -13,7 +13,7 @@ export default function About() {
       {/* 🎬 Background Lottie Animation - Centered & Large */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30 pointer-events-none">
         <div className="w-[500px] sm:w-[700px] lg:w-[900px] xl:w-[1000px]">
-        <LottieAnimation src="/AI-Animation.json" height="100%" width="100%" />
+        <LottieAnimation src="/About.json" height="100%" width="100%" />
         </div>
       </div>
 
