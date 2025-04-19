@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Player } from "@lottiefiles/react-lottie-player";
+//import { Player } from "@lottiefiles/react-lottie-player";
 import { Card, CardContent } from "@/components/ui/card";
 import dynamic from "next/dynamic";
 const LottieAnimation = dynamic(() => import('@/components/ui/LottieAnimation'), { ssr: false });
@@ -44,12 +44,7 @@ export default function Solution() {
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 min-w-[64px]">
-                    <Player
-                      autoplay
-                      loop
-                      src="/tracker.json"
-                      style={{ height: "100%", width: "100%" }}
-                    />
+                  <LottieAnimation src="/tracker.json" height={"100%"} width={"100%"} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-purple-400">
@@ -76,12 +71,7 @@ export default function Solution() {
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 min-w-[64px]">
-                    <Player
-                      autoplay
-                      loop
-                      src="/cognitive.json"
-                      style={{ height: "100%", width: "100%" }}
-                    />
+                  <LottieAnimation src="/cognitive.json" height={"100%"} width={"100%"} />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-purple-400">

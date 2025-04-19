@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Player } from "@lottiefiles/react-lottie-player";
+//import { Player } from "@lottiefiles/react-lottie-player";
 import dynamic from "next/dynamic";
 const LottieAnimation = dynamic(() => import('@/components/ui/LottieAnimation'), { ssr: false });
 
