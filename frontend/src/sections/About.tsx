@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
+import dynamic from "next/dynamic";
+const LottieAnimation = dynamic(() => import('@/components/ui/LottieAnimation'), { ssr: false });
+
 
 export default function About() {
   return (
@@ -10,12 +13,7 @@ export default function About() {
       {/* 🎬 Background Lottie Animation - Centered & Large */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30 pointer-events-none">
         <div className="w-[500px] sm:w-[700px] lg:w-[900px] xl:w-[1000px]">
-          <Player
-            autoplay
-            loop
-            src="/About.json"
-            style={{ width: "100%", height: "100%" }}
-          />
+        <LottieAnimation src="/AI-Animation.json" height="100%" width="100%" />
         </div>
       </div>
 

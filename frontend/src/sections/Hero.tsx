@@ -2,11 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
+import dynamic from "next/dynamic";
+const LottieAnimation = dynamic(() => import('@/components/ui/LottieAnimation'), { ssr: false });
+
 
 export default function Hero() {
   return (
     <section className="relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white overflow-hidden">
-      {/* Text Content */}
+      
       <div className="z-10 text-center space-y-6 px-4">
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -35,13 +38,8 @@ export default function Hero() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.2 }}
         >
-          <Player
-            autoplay
-            loop
-            aria-label="AI animation illustrating dementia care"
-            src="/AI-Animation.json" // Local file path
-            style={{ height: '500px', width: '500px' }}
-          />
+          <LottieAnimation src="/AI-Animation.json" height="500px" width="500px" />
+
         </motion.div>
       </div>
     </section>

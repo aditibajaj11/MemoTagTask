@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Card, CardContent } from "@/components/ui/card";
+import dynamic from "next/dynamic";
+const LottieAnimation = dynamic(() => import('@/components/ui/LottieAnimation'), { ssr: false });
 
 export default function Solution() {
   return (
@@ -14,12 +16,7 @@ export default function Solution() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.2 }}
         >
-          <Player
-            autoplay
-            loop
-            src="/AI-Animation.json"
-            style={{ height: "500px", width: "500px" }}
-          />
+          <LottieAnimation src="/AI-Animation.json" height={500} width={500} />
         </motion.div>
       </div>
 
