@@ -67,7 +67,7 @@ export default function CTA() {
           viewport={{ once: true }}
           className="text-lg sm:text-xl text-gray-300"
         >
-          Caregivers and healthcare providers can sign up for updates or request a demo. Let&aposs make dementia care smarter together.
+          Caregivers and healthcare providers can sign up for updates or request a demo. Let&aposs;s make dementia care smarter together.
         </motion.p>
 
         <motion.div

@@ -3,7 +3,7 @@ import About from "@/sections/About";
 import Problem from "@/sections/Problem";
 import Solution from "@/sections/Solution";
 import Traction from "@/sections/Traction";
-import CTA from "@/sections/CTA";
+import ClientWrapper from "@/sections/ClientWrapper";
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <Problem/>
       <Solution/>
       <Traction/>
-      <CTA/>
+      <ClientWrapper />
     </main>
   );
 }
